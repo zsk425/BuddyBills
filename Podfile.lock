@@ -1,0 +1,49 @@
+PODS:
+  - Facebook-iOS-SDK (3.12.0)
+  - FlatUIKit (1.3)
+  - HexColors (2.2.1)
+  - Mantle (1.3.1):
+    - Mantle/extobjc
+  - Mantle/extobjc (1.3.1)
+  - PNChart (0.3.2):
+    - UICountingLabel (~> 1.0.0)
+  - REFrostedViewController (2.4.3)
+  - RMStepsController (1.0.0)
+  - TMCache (1.2.0)
+  - TSMessages (0.9.4):
+    - HexColors
+  - UICountingLabel (1.0.0)
+  - UIDevice-Helpers (0.0.3)
+  - UIView+Helpers (1.3.0)
+
+DEPENDENCIES:
+  - Facebook-iOS-SDK
+  - FlatUIKit
+  - Mantle
+  - PNChart (~> 0.3.2)
+  - REFrostedViewController (~> 2.4.3)
+  - RMStepsController (~> 1.0.0)
+  - TMCache
+  - TSMessages
+  - UIDevice-Helpers (from `https://github.com/NZN/UIDevice-Helpers.git`)
+  - UIView+Helpers
+
+EXTERNAL SOURCES:
+  UIDevice-Helpers:
+    :git: https://github.com/NZN/UIDevice-Helpers.git
+
+SPEC CHECKSUMS:
+  Facebook-iOS-SDK: c09f7d80db5c48170ff834bc03ebe774c49d1f5b
+  FlatUIKit: 3b32b52bb3c266477709cfe4812ab2c877ae942b
+  HexColors: 3a68db077cd6572a8f7d4aa1add284dd2436a934
+  Mantle: abc3b0c81bc66eb624cf9cebb8640e377d5a44ae
+  PNChart: ea9f69e531ad768e0231bcf1d9e1becb4313ef91
+  REFrostedViewController: 544180cdfb02dc5a0fb73fba0d484b01d87faaf7
+  RMStepsController: bd30e3eb7bead3a3b93d34d912dc24ba0d1256fc
+  TMCache: 4b05e1b124d9f7e8d449640e059cff4cda17ed27
+  TSMessages: 5ab92604b02e49a755d2cc2baf114d2248a90977
+  UICountingLabel: bb976960c0130785a600aac592954c23eb395096
+  UIDevice-Helpers: 66eeb76ac8c6fbab5a9e96b4c1f38ea39f657e44
+  UIView+Helpers: 9a9d8c9a698b1527728af0a3b4d8572b9a8fbd14
+
+COCOAPODS: 0.29.0

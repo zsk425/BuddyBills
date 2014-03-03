@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Bill" representedClassName="Bill" syncable="YES">
+        <attribute name="activityDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="activityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="isAA" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="buddyBills" optional="YES" toMany="YES" minCount="1" deletionRule="Cascade" destinationEntity="BuddyBill" inverseName="bill" inverseEntity="BuddyBill" syncable="YES"/>
+    </entity>
+    <entity name="Buddy" representedClassName="Buddy" syncable="YES">
+        <attribute name="cteated_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="money" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bills" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BuddyBill" inverseName="buddy" inverseEntity="BuddyBill" syncable="YES"/>
+    </entity>
+    <entity name="BuddyBill" representedClassName="BuddyBill" syncable="YES">
+        <attribute name="currentPayed" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="needToPay" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="bill" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bill" inverseName="buddyBills" inverseEntity="Bill" syncable="YES"/>
+        <relationship name="buddy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Buddy" inverseName="bills" inverseEntity="Buddy" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Bill" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Buddy" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="BuddyBill" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

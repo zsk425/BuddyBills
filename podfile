@@ -1,0 +1,14 @@
+platform :ios, '7.0'
+inhibit_all_warnings!
+
+pod 'Facebook-iOS-SDK'
+pod 'FlatUIKit'
+#pod 'ECSlidingViewController', '~> 2.0.1'
+pod 'REFrostedViewController', '~> 2.4.3'
+pod 'UIView+Helpers'
+pod 'Mantle'
+pod 'TSMessages'
+pod 'TMCache'
+pod 'UIDevice-Helpers', :git => 'https://github.com/NZN/UIDevice-Helpers.git'
+pod "RMStepsController", "~> 1.0.0"
+pod 'PNChart', '~> 0.3.2'
